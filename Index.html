@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Josua Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="DisplaySection.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Josua Gouws</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showSection('about')">About</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection()">Show All</a></li>
+        </ul>
+    </nav>
+
+    <!-- Card Containers (Portfolio, CV, Extra) -->
+    <div class="card-container">
+        <div class="container">
+            <div class="card">
+                <h2>Portfolio</h2>
+                <div class="content">
+                    <img src="portpic.jpg" alt="Portfolio Image">
+                    <a href="portfolio.html" class="overlay-link portfolio-link">
+                        <span class="overlay-text">View Content</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2>CV</h2>
+                <div class="content">
+                    <img src="cv.jpg" alt="CV Image">
+                    <a href="CV.pdf" class="overlay-link cv-link">
+                        <span class="overlay-text">View Content</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2>Coming soon</h2>
+                <div class="content">
+                    <img src="coming soon.jpg" alt="Coming soon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 align="center">About Me</h2>
+        <p style="color:LightGray;">I am a young adult looking to work in the IT industry. 
+            I come from a small town in the Eastern Cape, Port Elizabeth called Uitenhage.
+            I like to code specifically design coding. I've always liked to create something new.
+            Things I play in my free time are chess and strategy games. I want to become a full stack developer one day.
+            But for now, I want to do front-end and later back-end.
+        </p>
+        <p style="color:LightGray;">
+            Below I have attached my CV for more information about me as well as contact details for more information.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 align="center">Skills</h2>
+        <ul style="color:LightGray;">
+            <li>HTML </li>
+            <li>CSS</li>
+            <li>C++</li>
+            <li>Some SQL</li>
+            <li>Microsoft Word / Excel / Access</li>
+            <li>General PC Knowledge</li>
+            <li>PC building/rebuilding</li>
+        </ul>
+        <p style="color:lightgray">
+             I am currently learning Angular and JavaScript
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 align="center">Experience</h2>
+        <p style="color:LightGray;">
+            I have experience in HTML/CSS. 
+            While also studying C++ for a while now. I've mostly build GUI applications via QTCreator.
+            I've done one project in JavaScript, about building a solar system using three.js. 
+            Currently, I am teaching myself how to code in Angular.
+            My Python experience is low since I've used it for a year only. But that is third on my list to relearn.
+            I've been taught SQL for 2 years as well.
+            Currently, I am fresh out of university, so I do not have any previous work experience; however, I am a hardworker and willing to do
+            whatever it takes to learn more.
+        </p>
+    </section>
+
+    <!-- Footer with contact links -->
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:josuagouws@gmail.com" class="fa fa-envelope" style="font-size:20px;" target="_blank"></a></p>
+        <p><a href="https://steamcommunity.com/id/KeeNinja/" class="fa fa-steam" target="_blank"></a></p>
+        <p><a href="https://wa.me/0620660278" class="fa fa-whatsapp" target="_blank"></a></p>
+        <p><a href="https://github.com/KeeN1nja/" class="fa fa-github" target="_blank"></a></p>
+        <p>My CV:  <a href="CV.pdf" class="fa fa-file-pdf-o" style="font-size:20px;color:red" target="_blank"></a></p>
+    </footer>
+</body>
+</html>

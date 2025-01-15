@@ -1,0 +1,266 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(background2.avif);
+    background-size: cover; 
+    min-height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    position: relative;
+ 
+}
+
+header 
+{
+    background: rgba(53, 66, 74, 0.8);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    background-clip:text;
+}
+
+h1 
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, h3, h4
+{
+    margin-top: -15px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav 
+{
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul 
+{
+    display:flex;
+    flex-direction:column;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 100px;
+    font-size: 1.2rem;
+}
+
+
+nav ul li 
+{
+    margin: 10px 0;
+
+}
+
+
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active 
+{
+    opacity: 0.5;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #00bfff;
+    border-radius: 100%;
+}
+
+
+section 
+{
+    padding: 20px ;
+    margin: 20px auto;
+    max-width: 800px;
+    height: auto;
+    background: rgba(53, 66, 74, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 255, 85);
+}
+
+
+p
+{
+    text-align:justify;
+}
+
+footer 
+{
+    margin-top:auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 255, 85);
+    background: rgba(53, 66, 74, 0.8);
+    color: #ffffff;
+}
+
+footer p
+{
+display: inline-block;
+margin: 0 15px;
+
+}
+
+.fa 
+{
+    padding: 10px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover 
+{
+    opacity: 0.7;
+}
+
+
+
+.fa-steam 
+{
+    background: #003c58;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-whatsapp 
+{
+    background: hsl(143, 100%, 35%);
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-github 
+{
+    background: hwb(0 0% 99% / 0);
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-envelope 
+{
+     color: rgb(83, 98, 238);
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Stack items horizontally on larger screens */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* Add horizontal spacing between items */
+    }
+}
+
+/* Card container styling */
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Ensures there's space between cards */
+    gap: 20px; /* Optional: controls the space between cards */
+    margin: 20px auto; /* Centers the container and adds some spacing */
+    max-width: 960px; /* Set a max width for the entire card section */
+    width: 100%; /* Ensures the wrapper uses full width up to the max-width */
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+}
+
+/* Individual card container styles */
+.container {
+    flex: 1 1 30%; /* Allows the containers to grow/shrink, but they won't be less than 30% of the available space */
+    max-width: 300px; /* Set the max width for each container */
+    width: 100%; /* Ensures the container fills available space without exceeding max-width */
+    box-sizing: border-box; /* Ensures padding doesn't affect width calculation */
+    padding: 0 10px; /* Optional: adds some space around the container */
+}
+
+/* Card styles */
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensures the card takes full width of its container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image inside the card */
+.card img {
+    width: 100%; /* Ensures image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image doesn't stretch, it will crop if necessary */
+    border-radius: 10px;
+}
+
+/* Content block styling (used for the image) */
+.content {
+    position: relative;
+    height: 200px;
+}
+
+/* Styling for "View Content" text */
+.overlay-link {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%) skew(-10deg); /* Center and skew */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white; /* White text color */
+    font-size: 18px; /* Text size */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s ease-in-out; /* Fade effect */
+    pointer-events: auto; /* Allow the link to be clickable */
+    border-radius: 5px;
+    z-index: 2;
+    text-decoration: none; /* No underlines */
+}
+
+/* When hovering over the container, the "View Content" box starts fading */
+.container:hover .overlay-link {
+    opacity: 0.3; /* Fade it out when hovered */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
