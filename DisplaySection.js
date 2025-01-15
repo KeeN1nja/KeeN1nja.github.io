@@ -5,7 +5,7 @@ function showSection(sectionId) {
     const containers = document.querySelectorAll('.card-container'); // Select the containers
 
     // Random background generate
-    const backgrounds = ['background1.jpg', 'background5.jpg', 'background2.jpg'];
+    const backgrounds = ['background1.jpg', 'background5.png', 'background2.jpg'];
     const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
     document.body.style.backgroundImage = `url(${randomBackground})`;
 
